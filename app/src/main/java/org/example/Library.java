@@ -14,9 +14,9 @@ public class Library {
         System.out.println("Success");
     }
 
-    public void showbooks() {
+    public void displayBooks() {
         for (Book book : books) {
-            System.out.println(book);
+            System.out.println(book.getTitle() + " " + book.getAuthor() + " " + book.getYearPublished());
         }
     }
 }

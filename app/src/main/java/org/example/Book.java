@@ -3,38 +3,40 @@ package org.example;
 public class Book {
 
     // This is your working class.
-    private String label;
-    private String writer;
-    private int year;
+    private String title;
+    private String author;
+    private int yearPublished;
 
-    public Book(String title, String author, int makeYear) {
-        label = title;
-        writer = author;
-        year = makeYear;
+    public Book(String title, String author, int yearPublished) {
+        this.title = title;
+        this.author = author;
+        this.yearPublished = yearPublished;
     }
 
-    public void setLabel(String title) {
-        label = title;
+    public String getTitle() {
+        return title;
     }
 
-    public void setWriter(String author) {
-        writer = author;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setYear(int makeYear) {
-        year = makeYear;
+    public int getYearPublished() {
+        return yearPublished;
     }
 
-    public String getLabel() {
-        return label;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getWriter() {
-        return writer;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
-    public int getYear() {
-        return year;
+    public void setYearPublished(int yearPublished) {
+        this.yearPublished = yearPublished;
     }
+
+
     
 }

@@ -5,7 +5,7 @@ package org.example;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Patron is: " + new Patron("Nureat Ahmed Sey"));
+        System.out.println("Patron is: " + new Patron("Ahmed Sey"));
         Library library = new Library();
 
         Book firstBook = new Book("Wickedness", "Sey", 2000);
@@ -14,7 +14,7 @@ public class App {
         library.addBook(firstBook);
         library.addBook(secondBook);
 
-        library.showbooks();
+        library.displayBooks();
 
     }
 }
